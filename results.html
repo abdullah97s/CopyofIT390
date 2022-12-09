@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>memorial books</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+      <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+   </head>
+   <!-- body -->
+   <body class="main-layout home_page">
+      <!-- loader  -->
+      <div class="loader_bg">
+         <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+      </div>
+      <!-- end loader -->
+      <!-- header -->
+      <header>
+         <!-- header inner -->
+         <div class="header">
+            <div class="container">
+               <div class="row">
+                  <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                     <div class="full">
+                        <div class="center-desk">
+                           <div class="logo"> <a href="index.html"><img src="images/logo.png" alt="#"></a> </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                     <div class="menu-area">
+                        <div class="limit-box">
+                           <nav class="main-menu">
+                              <ul class="menu-area-main">
+                                 <li> <a href="index.html">Home</a> </li>
+                                 <li> <a href="about.html">About us</a> </li>
+                                 <li><a href="contact.html">Contact us</a></li>
+                              </ul>
+                           </nav>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         
+         <!-- end header inner -->
+      </header>
+      <!-- end header -->
+
+      <!-- results -->
+      <div class="about">
+        <div class="container">
+           <div class="row">
+              <div class="col-md-10 offset-md-1">
+                 <div class="aboutheading">
+                    <h2>The <strong class="black">Results</strong></h2>
+                    <span>The following results are available books at great discounts!</span>
+                 </div>
+              </div>
+           </div>
+           <!-- This is where the example results are! -->
+           <div class="row border">
+            <div class="row" style="width:100%; text-align:center">
+               <div class="column" style="background-color:transparent"></div>
+               <div class="column" style="background-color:transparent"><h7>Save here!</h7></div>
+               <div class="column" style="background-color:transparent"></div>
+            </div>
+            <div class="row" style="width:100%; text-align:center">
+                <div class="column" style="background-color:transparent; border:7px solid gold; border-radius:10px;">
+                     <p>(Best Value)</p>
+                    <img src="./images/Amazon.png" alt="Amazon Logo" style="width:15vw; height:15vh; border-radius:10%">
+                    <h2>Amazon</h2>
+                    <p>Price: </p>
+                    <div id="test-output"></div>
+
+                     <py-script>
+                     from js import console
+
+                     def my_function(*args, **kwargs):
+
+                        #print('args:', args)
+                        #print('kwargs:', kwargs)
+
+                        console.log(f'args: {args}')
+                        console.log(f'kwargs: {kwargs}')
+                        
+                        text = Element('ISBN').element.value
+
+                        #print('text:', text)
+                        console.log(f'text: {text}')
+
+                        Element('test-output').element.innerText = text
+                     </py-script>
+                    <p>Status: Used</p>
+                    <p>Version: Softcover</p>
+                    <button class="button button2" formaction="./index.html">Check it out!</button>
+                </div>
+                <!--
+                <div class="column" style="background-color:transparent">
+                    <img src="./images/Ebay.png" alt="Ebay Logo" style="width:15vw; height:15vh; border-radius:10%">
+                    <h2>Ebay</h2>
+                    <p>Price: $43.84</p>
+                    <p>Status: Used</p>
+                    <p>Version: Softcover</p>
+                    <button class="button button2" formaction="./index.html">Check it out!</button>
+                </div>
+                <div class="column" style="background-color:transparent">
+                    <img src="./images/B_N.png" alt="B_N Logo" style="width:15vw; height:15vh; border-radius:10%">
+                    <h2>Barnes & Noble</h2>
+                    <p>Price: $69.99</p>
+                    <p>Status: New</p>
+                    <p>Version: Softcover</p>
+                    <button class="button button2" formaction="./index.html" style="border-radius: 5%;">Check it out!</button>
+                </div>
+-->
+              </div>
+           </div>
+        </div>
+     </div>
+   <!-- end results-->
+
+           <!-- footer -->
+           <footer>
+            <div class="footer">
+               <div class="container">
+                  <div class="row pdn-top-30">
+                     <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                        <div class="Follow">
+                           <h3>Follow Us</h3>
+                        </div>
+                        <ul class="location_icon">
+                           <li> <a href="#"><img src="icon/facebook.png"></a></li>
+                           <li> <a href="#"><img src="icon/Twitter.png"></a></li>
+                           <li> <a href="#"><img src="icon/linkedin.png"></a></li>
+                           <li> <a href="#"><img src="icon/instagram.png"></a></li>
+                        </ul>
+                     </div>
+                     <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
+                        <div class="Follow">
+                           <h3>Newsletter</h3>
+                        </div>
+                        <input class="Newsletter" placeholder="Enter your email" type="Enter your email">
+                        <button class="Subscribe">Subscribe</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="copyright">
+               <div class="container">
+                  <p>Copyright 2019 All Right Reserved By <a href="https://html.design/">Free html Templates</a></p>
+               </div>
+            </div>
+         </footer>
+         <!-- end footer -->
+         <!-- Javascript files-->
+         <script src="js/jquery.min.js"></script>
+         <script src="js/popper.min.js"></script>
+         <script src="js/bootstrap.bundle.min.js"></script>
+         <script src="js/jquery-3.0.0.min.js"></script>
+         <script src="js/plugin.js"></script>
+         <!-- sidebar -->
+         <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+         <script src="js/custom.js"></script>
+      </body>
+   </html>
