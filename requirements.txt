@@ -1,0 +1,4 @@
+Flask==1.1.2
+mysql-connector-python==8.0.20
+SQLALchemy==1.4.9
+Flask-SQLAIchemy==2.5.1
